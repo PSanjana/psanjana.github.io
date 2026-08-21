@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Sanjana Paniyadi — Software Engineer</title>
+    <script>
+      // GitHub Pages has no server-side routing, so a direct hit on a client
+      // route (e.g. /projects/foo) 404s. Encode the path into the query
+      // string and redirect to the SPA entry point, which decodes it back.
+      var path = window.location.pathname + window.location.search + window.location.hash;
+      window.location.replace("/?redirect=" + encodeURIComponent(path));
+    </script>
+  </head>
+  <body></body>
+</html>
